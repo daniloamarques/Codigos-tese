@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{article}
+
+% --- Pacotes essenciais ---
+\usepackage[utf8]{inputenc}   % Codificação de caracteres
+\usepackage[T1]{fontenc}      % Acentos corretos
+\usepackage[brazil]{babel}    % Idioma português do Brasil
+\usepackage{booktabs}         % Linhas mais elegantes nas tabelas
+\usepackage{caption}          % Melhor controle sobre legendas
+\usepackage{geometry}         % Controle de margens
+\usepackage{array}            % Controle de largura das colunas
+\usepackage{multirow}         % Combinar células verticalmente
+\usepackage{float}            % Permite usar [H] para fixar tabelas
+\usepackage{siunitx}          % Alinhamento numérico e formatação de números
+
+% --- Configurações de layout ---
+\geometry{a4paper, margin=2.5cm}
+\captionsetup{justification=centering, font=small}
+
+% --- Formatação de números decimais opcional, vírgula como separador ---
+\sisetup{
+  output-decimal-marker = {,}
+}
+
+\begin{document}
+
+\begin{table}[h!]
+\centering
+\caption{Número de curvas parabólicas em Homens}
+\begin{tabular}{c c}
+\hline
+\textbf{Número de curvas parabólicas} & \textbf{Quantidade de indivíduos} \\ 
+\hline
+17 & 1   \\
+18 & 0   \\
+19 & 4   \\
+20 & 8   \\
+21 & 14  \\
+22 & 17  \\
+23 & 39  \\
+24 & 78  \\
+25 & 136 \\
+26 & 139 \\
+27 & 105 \\
+28 & 40  \\
+29 & 5   \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+\caption{Número de curvas parabólicas em Mulheres}
+\begin{tabular}{c c}
+\hline
+\textbf{Número de curvas parabólicas} & \textbf{Quantidade de indivíduos} \\ 
+\hline
+15 & 1  \\
+16 & 1  \\
+17 & 3  \\
+18 & 6  \\
+19 & 9  \\
+20 & 10 \\
+21 & 14 \\
+22 & 25 \\
+23 & 22 \\
+24 & 58 \\
+25 & 77 \\
+26 & 90 \\
+27 & 59 \\
+28 & 20 \\
+29 & 5  \\
+30 & 1  \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+\caption{Número de curvas parabólicas — Ambos os sexos}
+\begin{tabular}{c c}
+\hline
+\textbf{Número de curvas parabólicas} & \textbf{Quantidade de indivíduos} \\ 
+\hline
+15 & 1   \\
+16 & 1   \\
+17 & 4   \\
+18 & 6   \\
+19 & 13  \\
+20 & 18  \\
+21 & 28  \\
+22 & 42  \\
+23 & 61  \\
+24 & 136 \\
+25 & 213 \\
+26 & 229 \\
+27 & 164 \\
+28 & 60  \\
+29 & 10  \\
+30 & 1   \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\end{document}
