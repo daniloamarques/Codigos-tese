@@ -11,7 +11,8 @@
 \usepackage{multirow}         % Combinar células verticalmente
 \usepackage{float}            % Permite usar [H] para fixar tabelas
 \usepackage{siunitx}          % Alinhamento numérico e formatação de números
-
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 % --- Configurações de layout ---
 \geometry{a4paper, margin=2.5cm}
 \captionsetup{justification=centering, font=small}
@@ -47,6 +48,39 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de umbílicos},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (5,3)
+    (6,8)
+    (7,33)
+    (8,56)
+    (9,111)
+    (10,130)
+    (11,126)
+    (12,70)
+    (13,36)
+    (14,9)
+    (15,3)
+    (16,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de pontos umbílicos em Homens}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -122,6 +156,39 @@ Bochecha Esquerda & 0 & 114 \\
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de umbílicos},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (5,4)
+    (6,6)
+    (7,31)
+    (8,53)
+    (9,77)
+    (10,79)
+    (11,68)
+    (12,48)
+    (13,19)
+    (14,8)
+    (15,6)
+    (16,2)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de pontos umbílicos em Mulheres}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -176,6 +243,7 @@ Bochecha Esquerda & 0 & 106 \\
 
 
 
+
 \begin{table}[h!]
 \centering
 \caption{Número de pontos umbílicos — Ambos os sexos}
@@ -199,6 +267,39 @@ Bochecha Esquerda & 0 & 106 \\
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de umbílicos},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (5,7)
+    (6,14)
+    (7,64)
+    (8,109)
+    (9,188)
+    (10,209)
+    (11,194)
+    (12,118)
+    (13,55)
+    (14,17)
+    (15,9)
+    (16,3)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de pontos umbílicos — Ambos os sexos}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -251,5 +352,9 @@ Bochecha Esquerda & 0 & 220 \\
 \hline
 \end{tabular}
 \end{table}
+
+
+
+
 
 \end{document}
