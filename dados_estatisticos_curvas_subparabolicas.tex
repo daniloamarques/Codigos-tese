@@ -11,7 +11,8 @@
 \usepackage{multirow}         % Combinar células verticalmente
 \usepackage{float}            % Permite usar [H] para fixar tabelas
 \usepackage{siunitx}          % Alinhamento numérico e formatação de números
-
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 % --- Configurações de layout ---
 \geometry{a4paper, margin=2.5cm}
 \captionsetup{justification=centering, font=small}
@@ -54,6 +55,48 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (14,2)
+    (16,6)
+    (17,12)
+    (18,27)
+    (19,30)
+    (20,41)
+    (21,53)
+    (22,56)
+    (23,80)
+    (24,74)
+    (25,52)
+    (26,62)
+    (27,27)
+    (28,23)
+    (29,22)
+    (30,10)
+    (31,4)
+    (32,3)
+    (33,1)
+    (35,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul — Homens}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -84,6 +127,47 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (14,1)
+    (15,9)
+    (16,4)
+    (17,12)
+    (18,24)
+    (19,33)
+    (20,39)
+    (21,47)
+    (22,52)
+    (23,37)
+    (24,50)
+    (25,36)
+    (26,25)
+    (27,14)
+    (28,8)
+    (29,4)
+    (30,3)
+    (32,2)
+    (34,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul — Mulheres}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -119,6 +203,50 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (14,3)
+    (15,9)
+    (16,10)
+    (17,24)
+    (18,51)
+    (19,63)
+    (20,80)
+    (21,100)
+    (22,108)
+    (23,117)
+    (24,124)
+    (25,88)
+    (26,87)
+    (27,41)
+    (28,31)
+    (29,26)
+    (30,13)
+    (31,4)
+    (32,5)
+    (33,1)
+    (34,1)
+    (35,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul — Ambos os sexos}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -150,6 +278,47 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (10,1)
+    (12,1)
+    (13,1)
+    (14,10)
+    (15,19)
+    (16,22)
+    (17,49)
+    (18,60)
+    (19,61)
+    (20,65)
+    (21,69)
+    (22,66)
+    (23,57)
+    (24,39)
+    (25,27)
+    (26,21)
+    (27,9)
+    (28,5)
+    (30,4)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha — Homens}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -180,6 +349,45 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (11,1)
+    (14,3)
+    (15,7)
+    (16,7)
+    (17,21)
+    (18,37)
+    (19,40)
+    (20,58)
+    (21,39)
+    (22,47)
+    (23,43)
+    (24,36)
+    (25,32)
+    (26,14)
+    (27,8)
+    (28,3)
+    (29,3)
+    (30,2)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha — Mulheres}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -213,6 +421,48 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (10,1)
+    (11,1)
+    (12,1)
+    (13,1)
+    (14,13)
+    (15,26)
+    (16,29)
+    (17,70)
+    (18,97)
+    (19,101)
+    (20,123)
+    (21,108)
+    (22,113)
+    (23,100)
+    (24,75)
+    (25,59)
+    (26,35)
+    (27,17)
+    (28,8)
+    (29,3)
+    (30,6)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha — Ambos os sexos}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -244,6 +494,46 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul fechada},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (4,1)
+    (5,1)
+    (6,8)
+    (7,20)
+    (8,35)
+    (9,45)
+    (10,63)
+    (11,85)
+    (12,73)
+    (13,65)
+    (14,60)
+    (15,45)
+    (16,29)
+    (17,35)
+    (18,12)
+    (19,6)
+    (20,1)
+    (23,1)
+    (24,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul fechada — Homens}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -274,6 +564,46 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul fechada},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (4,2)
+    (5,4)
+    (6,6)
+    (7,18)
+    (8,33)
+    (9,40)
+    (10,57)
+    (11,48)
+    (12,61)
+    (13,43)
+    (14,37)
+    (15,24)
+    (16,15)
+    (17,4)
+    (18,3)
+    (19,4)
+    (20,1)
+    (21,1)
+};
+\addplot coordinates {};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul fechada — Mulheres}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -306,6 +636,47 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul fechada},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (4,3)
+    (5,5)
+    (6,14)
+    (7,38)
+    (8,68)
+    (9,85)
+    (10,120)
+    (11,133)
+    (12,134)
+    (13,108)
+    (14,97)
+    (15,69)
+    (16,44)
+    (17,39)
+    (18,15)
+    (19,10)
+    (20,2)
+    (21,1)
+    (23,1)
+    (24,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul fechada — Ambos os sexos}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -332,6 +703,41 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul aberta},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (5,2)
+    (6,7)
+    (7,17)
+    (8,38)
+    (9,81)
+    (10,88)
+    (11,92)
+    (12,103)
+    (13,69)
+    (14,46)
+    (15,28)
+    (16,12)
+    (17,2)
+    (18,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul aberta — Homens}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -357,6 +763,40 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul aberta},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (5,1)
+    (6,3)
+    (7,17)
+    (8,36)
+    (9,49)
+    (10,82)
+    (11,73)
+    (12,50)
+    (13,47)
+    (14,26)
+    (15,9)
+    (16,6)
+    (17,2)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul aberta — Mulheres}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -383,6 +823,41 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas azul aberta},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (5,3)
+    (6,10)
+    (7,34)
+    (8,74)
+    (9,130)
+    (10,170)
+    (11,165)
+    (12,153)
+    (13,116)
+    (14,72)
+    (15,37)
+    (16,18)
+    (17,4)
+    (18,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas azul aberta — Ambos os sexos}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -415,6 +890,47 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha fechada},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (3,1)
+    (4,2)
+    (5,8)
+    (6,9)
+    (7,23)
+    (8,43)
+    (9,44)
+    (10,69)
+    (11,74)
+    (12,75)
+    (13,70)
+    (14,59)
+    (15,39)
+    (16,26)
+    (17,20)
+    (18,14)
+    (19,6)
+    (20,2)
+    (21,1)
+    (22,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha fechada — Homens}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -445,6 +961,45 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha fechada},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (2,1)
+    (5,1)
+    (6,3)
+    (7,10)
+    (8,17)
+    (9,31)
+    (10,37)
+    (11,51)
+    (12,52)
+    (13,37)
+    (14,52)
+    (15,40)
+    (16,26)
+    (17,23)
+    (18,12)
+    (19,4)
+    (20,3)
+    (22,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha fechada — Mulheres}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -478,6 +1033,48 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha fechada},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (2,1)
+    (3,1)
+    (4,2)
+    (5,9)
+    (6,12)
+    (7,33)
+    (8,60)
+    (9,75)
+    (10,106)
+    (11,125)
+    (12,127)
+    (13,107)
+    (14,111)
+    (15,79)
+    (16,52)
+    (17,43)
+    (18,26)
+    (19,10)
+    (20,5)
+    (21,1)
+    (22,2)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha fechada — Ambos os sexos}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -502,6 +1099,39 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha aberta},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (4,3)
+    (5,12)
+    (6,41)
+    (7,95)
+    (8,115)
+    (9,129)
+    (10,92)
+    (11,65)
+    (12,24)
+    (13,8)
+    (14,1)
+    (15,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha aberta — Homens}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -524,6 +1154,37 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha aberta},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (4,1)
+    (5,6)
+    (6,27)
+    (7,72)
+    (8,100)
+    (9,78)
+    (10,52)
+    (11,36)
+    (12,20)
+    (13,9)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha aberta — Mulheres}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -548,6 +1209,39 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas subparabólicas vermelha aberta},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (4,4)
+    (5,18)
+    (6,68)
+    (7,167)
+    (8,215)
+    (9,207)
+    (10,144)
+    (11,101)
+    (12,44)
+    (13,17)
+    (14,1)
+    (15,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas subparabólicas vermelha aberta — Ambos os sexos}
+\end{figure}
 
 
 

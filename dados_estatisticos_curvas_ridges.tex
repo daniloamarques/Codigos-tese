@@ -11,7 +11,8 @@
 \usepackage{multirow}         % Combinar células verticalmente
 \usepackage{float}            % Permite usar [H] para fixar tabelas
 \usepackage{siunitx}          % Alinhamento numérico e formatação de números
-
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 % --- Configurações de layout ---
 \geometry{a4paper, margin=2.5cm}
 \captionsetup{justification=centering, font=small}
@@ -53,6 +54,47 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=7pt,
+    xlabel={Número de curvas ridges azul},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=15cm,
+    height=9cm,
+    grid=major,
+]
+\addplot coordinates {
+    (15,1)
+    (16,5)
+    (17,11)
+    (18,15)
+    (19,26)
+    (20,38)
+    (21,56)
+    (22,67)
+    (23,61)
+    (24,81)
+    (25,67)
+    (26,46)
+    (27,47)
+    (28,30)
+    (29,17)
+    (30,9)
+    (31,4)
+    (32,3)
+    (33,2)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul — Homens}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -86,6 +128,50 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=7pt,
+    xlabel={Número de curvas ridges azul},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=15cm,
+    height=9cm,
+    grid=major,
+]
+\addplot coordinates {
+    (14,1)
+    (16,2)
+    (17,2)
+    (18,8)
+    (19,12)
+    (20,21)
+    (21,39)
+    (22,42)
+    (23,44)
+    (24,61)
+    (25,41)
+    (26,43)
+    (27,24)
+    (28,25)
+    (29,19)
+    (30,5)
+    (31,6)
+    (32,1)
+    (33,1)
+    (34,1)
+    (35,2)
+    (38,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul — Mulheres}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -122,6 +208,51 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=7pt,
+    xlabel={Número de curvas ridges azul},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=15cm,
+    height=9cm,
+    grid=major,
+]
+\addplot coordinates {
+    (14,1)
+    (15,1)
+    (16,7)
+    (17,13)
+    (18,23)
+    (19,38)
+    (20,59)
+    (21,95)
+    (22,109)
+    (23,105)
+    (24,142)
+    (25,108)
+    (26,89)
+    (27,71)
+    (28,55)
+    (29,36)
+    (30,14)
+    (31,10)
+    (32,4)
+    (33,3)
+    (34,1)
+    (35,2)
+    (38,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul — Ambos os sexos}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -154,6 +285,48 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=7pt,
+    xlabel={Número de curvas ridges vermelha},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=15cm,
+    height=9cm,
+    grid=major,
+]
+\addplot coordinates {
+    (12,1)
+    (13,7)
+    (14,13)
+    (15,16)
+    (16,27)
+    (17,51)
+    (18,48)
+    (19,77)
+    (20,67)
+    (21,62)
+    (22,63)
+    (23,49)
+    (24,40)
+    (25,30)
+    (26,11)
+    (27,14)
+    (28,6)
+    (29,1)
+    (30,1)
+    (31,2)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha — Homens}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -185,6 +358,48 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=7pt,
+    xlabel={Número de curvas ridges vermelha},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=15cm,
+    height=9cm,
+    grid=major,
+]
+\addplot coordinates {
+    (10,1)
+    (12,2)
+    (13,4)
+    (14,10)
+    (15,9)
+    (16,21)
+    (17,32)
+    (18,32)
+    (19,41)
+    (20,51)
+    (21,48)
+    (22,42)
+    (23,35)
+    (24,27)
+    (25,21)
+    (26,13)
+    (27,8)
+    (28,2)
+    (30,1)
+    (31,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha — Mulheres}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -219,6 +434,49 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=7pt,
+    xlabel={Número de curvas ridges vermelha},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=15cm,
+    height=9cm,
+    grid=major,
+]
+\addplot coordinates {
+    (10,1)
+    (12,3)
+    (13,11)
+    (14,23)
+    (15,25)
+    (16,48)
+    (17,83)
+    (18,80)
+    (19,118)
+    (20,118)
+    (21,110)
+    (22,105)
+    (23,84)
+    (24,67)
+    (25,51)
+    (26,24)
+    (27,22)
+    (28,8)
+    (29,1)
+    (30,2)
+    (31,3)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha — Ambos os sexos}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -252,6 +510,50 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[	
+    ybar,
+    width=15cm,
+    height=9cm,
+    xlabel={Número de curvas ridges azul fechada},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    ymin=0,
+    bar width=7pt,
+    enlarge x limits=0.05,
+    grid=major,
+    %title={Número de curvas ridges azul fechada — Homens}
+]
+\addplot coordinates {
+    (4,1)
+    (6,2)
+    (7,7)
+    (8,8)
+    (9,27)
+    (10,44)
+    (11,41)
+    (12,77)
+    (13,74)
+    (14,71)
+    (15,79)
+    (16,53)
+    (17,36)
+    (18,31)
+    (19,17)
+    (20,12)
+    (21,2)
+    (22,1)
+    (23,1)
+    (24,1)
+    (25,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul fechada — Homens}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -284,6 +586,50 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges azul fechada},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=8pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    grid=major,
+    %title={Número de curvas ridges azul fechada — Mulheres}
+]
+\addplot coordinates {
+    (6,1)
+    (7,2)
+    (8,5)
+    (9,11)
+    (10,23)
+    (11,31)
+    (12,42)
+    (13,34)
+    (14,55)
+    (15,57)
+    (16,51)
+    (17,21)
+    (18,21)
+    (19,16)
+    (20,10)
+    (21,8)
+    (22,6)
+    (23,4)
+    (24,1)
+    (26,1)
+    (29,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul fechada — Mulheres}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -320,6 +666,52 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges azul fechada},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=8pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    grid=major,
+    %title={Número de curvas ridges azul fechada — Ambos os sexos}
+]
+\addplot coordinates {
+    (4,1)
+    (6,3)
+    (7,9)
+    (8,13)
+    (9,38)
+    (10,67)
+    (11,72)
+    (12,119)
+    (13,108)
+    (14,126)
+    (15,136)
+    (16,104)
+    (17,57)
+    (18,52)
+    (19,33)
+    (20,22)
+    (21,10)
+    (22,7)
+    (23,5)
+    (24,2)
+    (25,1)
+    (26,1)
+    (29,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul fechada — Ambos os sexos}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -344,6 +736,41 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges azul aberta},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={5,6,7,8,9,10,11,12,13,14,15,16},
+    %title={Número de curvas ridges azul aberta — Homens}
+]
+\addplot coordinates {
+    (1,3)
+    (2,12)
+    (3,39)
+    (4,80)
+    (5,122)
+    (6,131)
+    (7,78)
+    (8,73)
+    (9,31)
+    (10,11)
+    (11,3)
+    (12,3)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul aberta — Homens}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -366,6 +793,40 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges azul aberta},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={5,6,7,8,9,10,11,12,13,14,15},
+    %title={Número de curvas ridges azul aberta — Mulheres}
+]
+\addplot coordinates {
+    (1,1)
+    (2,18)
+    (3,36)
+    (4,69)
+    (5,85)
+    (6,71)
+    (7,58)
+    (8,27)
+    (9,16)
+    (10,14)
+    (11,6)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul aberta — Mulheres}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -390,6 +851,41 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges azul aberta},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={5,6,7,8,9,10,11,12,13,14,15,16},
+    %title={Número de curvas ridges azul aberta — Ambos os sexos}
+]
+\addplot coordinates {
+    (1,4)
+    (2,30)
+    (3,75)
+    (4,149)
+    (5,207)
+    (6,202)
+    (7,136)
+    (8,100)
+    (9,47)
+    (10,25)
+    (11,9)
+    (12,3)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges azul aberta — Ambos os sexos}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -419,6 +915,46 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges vermelha fechada},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19},
+    %title={Número de curvas ridges vermelha fechada — Homens}
+]
+\addplot coordinates {
+    (1,3)
+    (2,13)
+    (3,16)
+    (4,34)
+    (5,47)
+    (6,63)
+    (7,81)
+    (8,73)
+    (9,76)
+    (10,57)
+    (11,48)
+    (12,31)
+    (13,21)
+    (14,9)
+    (15,10)
+    (16,3)
+    (17,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha fechada — Homens}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -451,6 +987,48 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges vermelha fechada},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21},
+    %title={Número de curvas ridges vermelha fechada — Mulheres}
+]
+\addplot coordinates {
+    (1,1)
+    (2,6)
+    (3,8)
+    (4,12)
+    (5,30)
+    (6,52)
+    (7,47)
+    (8,57)
+    (9,58)
+    (10,47)
+    (11,25)
+    (12,23)
+    (13,15)
+    (14,9)
+    (15,5)
+    (16,3)
+    (17,1)
+    (18,1)
+    (19,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha fechada — Mulheres}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -482,6 +1060,48 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges vermelha fechada},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21},
+    %title={Número de curvas ridges vermelha fechada — Ambos os sexos}
+]
+\addplot coordinates {
+    (1,4)
+    (2,19)
+    (3,24)
+    (4,46)
+    (5,77)
+    (6,115)
+    (7,128)
+    (8,130)
+    (9,134)
+    (10,104)
+    (11,73)
+    (12,54)
+    (13,36)
+    (14,18)
+    (15,15)
+    (16,6)
+    (17,2)
+    (18,1)
+    (19,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha fechada — Ambos os sexos}
+\end{figure}
+
 
 \begin{table}[h!]
 \centering
@@ -507,6 +1127,43 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges vermelha aberta},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={4,5,6,7,8,9,10,11,12,13,14,15,16,17},
+    %title={Número de curvas ridges vermelha aberta — Homens}
+]
+\addplot coordinates {
+    (1,1)
+    (2,4)
+    (3,23)
+    (4,39)
+    (5,60)
+    (6,94)
+    (7,96)
+    (8,84)
+    (9,80)
+    (10,56)
+    (11,25)
+    (12,15)
+    (13,4)
+    (14,5)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha aberta — Homens}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -535,6 +1192,43 @@
 \end{table}
 
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges vermelha aberta},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={5,6,7,8,9,10,11,12,13,14,15,16,17,18},
+   	%title={Número de curvas ridges vermelha aberta — Mulheres}
+]
+\addplot coordinates {
+    (1,8)
+    (2,18)
+    (3,37)
+    (4,46)
+    (5,60)
+    (6,56)
+    (7,68)
+    (8,50)
+    (9,25)
+    (10,19)
+    (11,10)
+    (12,1)
+    (13,2)
+    (14,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha aberta — Mulheres}
+\end{figure}
+
 \begin{table}[h!]
 \centering
 \caption{Número de curvas ridges vermelha aberta — Ambos os sexos}
@@ -560,6 +1254,43 @@
 \hline
 \end{tabular}
 \end{table}
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=15cm,
+    height=8cm,
+    xlabel={Número de curvas ridges vermelha aberta},
+    ylabel={Quantidade de indivíduos},
+    ymin=0,
+    bar width=10pt,
+    enlarge x limits=0.02,
+    xtick=data,
+    xticklabels={4,5,6,7,8,9,10,11,12,13,14,15,16,17,18},
+    %title={Número de curvas ridges vermelha aberta — Ambos os sexos}
+]
+\addplot coordinates {
+    (1,1)
+    (2,12)
+    (3,41)
+    (4,76)
+    (5,106)
+    (6,154)
+    (7,152)
+    (8,152)
+    (9,130)
+    (10,81)
+    (11,44)
+    (12,25)
+    (13,5)
+    (14,7)
+    (15,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas ridges vermelha aberta — Ambos os sexos}
+\end{figure}
 
 
 

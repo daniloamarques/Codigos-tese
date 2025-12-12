@@ -11,7 +11,8 @@
 \usepackage{multirow}         % Combinar células verticalmente
 \usepackage{float}            % Permite usar [H] para fixar tabelas
 \usepackage{siunitx}          % Alinhamento numérico e formatação de números
-
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 % --- Configurações de layout ---
 \geometry{a4paper, margin=2.5cm}
 \captionsetup{justification=centering, font=small}
@@ -47,6 +48,40 @@
 \end{tabular}
 \end{table}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas parabólicas},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (17,1)
+    (18,0)
+    (19,4)
+    (20,8)
+    (21,14)
+    (22,17)
+    (23,39)
+    (24,78)
+    (25,136)
+    (26,139)
+    (27,105)
+    (28,40)
+    (29,5)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas parabólicas em Homens}
+\end{figure}
 
 \begin{table}[h!]
 \centering
@@ -74,6 +109,44 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas parabólicas},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (15,1)
+    (16,1)
+    (17,3)
+    (18,6)
+    (19,9)
+    (20,10)
+    (21,14)
+    (22,25)
+    (23,22)
+    (24,58)
+    (25,77)
+    (26,90)
+    (27,59)
+    (28,20)
+    (29,5)
+    (30,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas parabólicas em Mulheres}
+\end{figure}
 
 
 \begin{table}[h!]
@@ -104,6 +177,43 @@
 \end{table}
 
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=8pt,
+    xlabel={Número de curvas parabólicas},
+    ylabel={Quantidade de indivíduos},
+    xtick=data,
+    enlarge x limits=0.05,
+    ymin=0,
+    width=14cm,
+    height=8cm,
+    grid=major,
+]
+\addplot coordinates {
+    (15,1)
+    (16,1)
+    (17,4)
+    (18,6)
+    (19,13)
+    (20,18)
+    (21,28)
+    (22,42)
+    (23,61)
+    (24,136)
+    (25,213)
+    (26,229)
+    (27,164)
+    (28,60)
+    (29,10)
+    (30,1)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Número de curvas parabólicas — Ambos os sexos}
+\end{figure}
 
 
 
